@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* Comienza header */
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    background: #222;
+    position: fixed;
+    width: 100%;
+}
+
+/*  header::after se uso para colocar el contenedor despues del texto, de esa manera se ve el fondo del header.*/
+
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+
+}
+
+.logo{
+    float: left;
+    width: 80px;
+    padding: 10px 0 10px 10px;
+}
+
+.logo:hover{
+ transform: scale(1.1);
+ transition: 0.5s;
+}
+
+nav {
+    float: right;
+    list-style: none;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 40px;
+    padding-top: 35px;
+
+    position: relative;
+}
+nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+nav li a:hover{
+    color: rgb(138, 98, 11);
+    transition:  0.4s all;
+}
+
+
+/* Lineas sobre elementos del menu hover */
+nav a::before{
+    content:'';
+    display: block;
+    height: 5px;
+    background-color: rgb(138, 98, 11);
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before{
+    width: 100%;
+}
+
+/* Terminan Lineas sobre elementos del menu hover */
+
+/* Termina Header */
+
+
+.video{
+    width: 100%;
+    overflow: auto;
+    padding-top: 90px;
+}
+
+
+/* Comienza seccion con inline block (img izq, texto derecha) */
+
+
+#container{
+    width: 100%;
+    background-color: #373531;
+}
+
+.sections{
+    width: 50%;
+    height: 350px;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    font-size:50px;
+}
+
+
+#sec01{
+    background-color: aqua;
+    vertical-align: middle;
+    line-height: 0px;
+}
+
+#sec01 img{
+    width: 100%;
+}
+
+#sec02{
+    background-color: #222;
+    vertical-align: middle;
+    line-height: 0px;
+}
+
+#sec02 h1{
+    font-size: 30px;
+    padding-top: 50px;
+}
+
+#sec02 p{
+    font-size: 15px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+/* Comienza Seccion discografia */
+.grid-item{
+    width: 150px;
+    height:150px;
+    display:inline-block;
+    margin: 0 auto;
+}
+
+.green{
+    background-color: green;
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+
+/* termina Seccion discografia */
+
+
+
+
+
+
+
+
+
+
